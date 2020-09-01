@@ -16,7 +16,7 @@ namespace LocalizationData
 
         private void loadDataGridView()
         {
-            string dir = "../../data/uscities.csv";
+            string dir = "../../data/data.csv";
             //string dir = "C:/Users/samue/Desktop/a.csv";
             if (File.Exists(dir))
             {

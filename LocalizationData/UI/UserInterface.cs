@@ -53,7 +53,7 @@ namespace LocalizationData
         {
             map.MapProvider = GoogleMapProvider.Instance;
             GMaps.Instance.Mode = AccessMode.ServerOnly;
-            map.Position = new PointLatLng(0, -50);
+            map.Position = new PointLatLng(39.47649, -6.37224);
         }
     }
 }

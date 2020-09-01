@@ -1,0 +1,13 @@
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\bin\Debug\LocalizationData.exe.config
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\bin\Debug\LocalizationData.exe
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\bin\Debug\LocalizationData.pdb
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\bin\Debug\GMap.NET.Core.dll
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\obj\Debug\LocalizationData.csprojAssemblyReference.cache
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\obj\Debug\LocalizationData.Properties.Resources.resources
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\obj\Debug\LocalizationData.UserInterface.resources
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\obj\Debug\LocalizationData.csproj.GenerateResource.cache
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\obj\Debug\LocalizationData.csproj.CoreCompileInputs.cache
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\obj\Debug\LocalizationData.csproj.CopyComplete
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\obj\Debug\LocalizationData.exe
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\obj\Debug\LocalizationData.pdb

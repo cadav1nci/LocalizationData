@@ -78,7 +78,7 @@
             this.map.Location = new System.Drawing.Point(0, 0);
             this.map.MarkersEnabled = true;
             this.map.MaxZoom = 18;
-            this.map.MinZoom = 2;
+            this.map.MinZoom = 3;
             this.map.MouseWheelZoomEnabled = true;
             this.map.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
             this.map.Name = "map";
@@ -91,7 +91,7 @@
             this.map.ShowTileGridLines = false;
             this.map.Size = new System.Drawing.Size(400, 450);
             this.map.TabIndex = 0;
-            this.map.Zoom = 15D;
+            this.map.Zoom = 18D;
             this.map.Load += new System.EventHandler(this.map_Load);
             // 
             // UserInterface

@@ -19,22 +19,20 @@ namespace LocalizationData
         {
             dt = new DataTable();
             puntos = new List<PointLatLng>();
+            
             InitializeComponent();
             loadDataGridView();
-            setMarkers();
+            
+
         }
 
         private void setMarkers()
-        {
-            Console.WriteLine(puntos.Count);
+        {            
             foreach (PointLatLng p in puntos)
             {
                 GMapMarker m = new GMarkerGoogle(p, GMarkerGoogleType.green_dot);
                 markers.Markers.Add(m);
             }
-            PointLatLng pi = new PointLatLng(48.864716, 2.349014);
-            GMapMarker ma = new GMarkerGoogle(pi, GMarkerGoogleType.pink_dot);
-            markers.Markers.Add(ma);
         }
 
         
@@ -59,13 +57,9 @@ namespace LocalizationData
                     this.dt.Columns.Add(aux[i]);
                     
                 }
-                
-                
-
+              
                 for (int i = 1; i < lines.Length; i++)
                 {
-                    
-
                     //split the line by ","
                     string[] aux = lines[i].Split(',');
                  
@@ -73,10 +67,11 @@ namespace LocalizationData
                         continue;
                     }
                     else {
-                        double lat = double.Parse(aux[8]);
-                        double lon = double.Parse(aux[9]);
-                        Console.WriteLine(aux.Length + "");
-                       // Console.WriteLine(lat+" "+lon);
+
+                        double lat = double.Parse(aux[9]);
+                        double lon = double.Parse(aux[8]);
+
+
                         PointLatLng p = new PointLatLng(lat, lon);
                         puntos.Add(p);
                         dt.Rows.Add(aux);
@@ -85,6 +80,7 @@ namespace LocalizationData
                 }
             }
             dataGridView1.DataSource = dt;
+            setMarkers();
         }
 
         private void map_Load(object sender, EventArgs e)

@@ -19,8 +19,10 @@ namespace LocalizationData
         {
             dt = new DataTable();
             puntos = new List<PointLatLng>();
+           
             
-            InitializeComponent();
+
+                InitializeComponent();
             loadDataGridView();
             
 
@@ -89,6 +91,16 @@ namespace LocalizationData
             GMaps.Instance.Mode = AccessMode.ServerOnly;
             map.Position = new PointLatLng(4.60971, -74.08175);
             map.Overlays.Add(markers);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void choose(object sender, EventArgs e)
+        {
+            Console.Write(OptionsBox.Text);
         }
     }
 }

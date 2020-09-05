@@ -30,6 +30,7 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.OptionsBox = new System.Windows.Forms.ComboBox();
             this.map = new GMap.NET.WindowsForms.GMapControl();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -51,6 +52,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.button1);
             this.splitContainer1.Panel2.Controls.Add(this.OptionsBox);
             this.splitContainer1.Panel2.Controls.Add(this.map);
             this.splitContainer1.Size = new System.Drawing.Size(1087, 572);
@@ -68,6 +70,17 @@
             this.dataGridView1.Size = new System.Drawing.Size(538, 572);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button1.Location = new System.Drawing.Point(0, 527);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(139, 42);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Show Charts";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // OptionsBox
             // 
@@ -144,7 +157,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private GMap.NET.WindowsForms.GMapControl map;
         private System.Windows.Forms.ComboBox OptionsBox;
-
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -24,3 +24,13 @@ C:\Users\Toño\Source\Repos\LocalizationData\LocalizationData\obj\Debug\Localiza
 C:\Users\Toño\Source\Repos\LocalizationData\LocalizationData\obj\Debug\LocalizationData.csproj.CopyComplete
 C:\Users\Toño\Source\Repos\LocalizationData\LocalizationData\obj\Debug\LocalizationData.exe
 C:\Users\Toño\Source\Repos\LocalizationData\LocalizationData\obj\Debug\LocalizationData.pdb
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\bin\Debug\LiveCharts.dll
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\bin\Debug\LiveCharts.pdb
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\bin\Debug\LiveCharts.xml
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\samue\Documents\VSprojects\LocalizationData\LocalizationData\obj\Debug\LocalizationData.UI.Graphs.resources

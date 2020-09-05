@@ -7,6 +7,7 @@ using System.Data;
 using System.Collections.Generic;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
+using LocalizationData.UI;
 
 namespace LocalizationData
 {
@@ -15,6 +16,7 @@ namespace LocalizationData
         private List<PointLatLng> puntos;
         GMapOverlay markers = new GMapOverlay("markers");
         DataTable dt;
+
         public UserInterface()
         {
             dt = new DataTable();
@@ -101,6 +103,12 @@ namespace LocalizationData
         private void choose(object sender, EventArgs e)
         {
             Console.Write(OptionsBox.Text);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Graphs gr = new Graphs(dt);
+            gr.Show();
         }
     }
 }

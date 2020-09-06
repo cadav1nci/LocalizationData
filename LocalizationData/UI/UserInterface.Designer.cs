@@ -33,6 +33,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.OptionsBox = new System.Windows.Forms.ComboBox();
             this.map = new GMap.NET.WindowsForms.GMapControl();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -52,6 +53,7 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.button2);
             this.splitContainer1.Panel2.Controls.Add(this.button1);
             this.splitContainer1.Panel2.Controls.Add(this.OptionsBox);
             this.splitContainer1.Panel2.Controls.Add(this.map);
@@ -134,6 +136,16 @@
             this.map.Zoom = 18D;
             this.map.Load += new System.EventHandler(this.map_Load);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(4, 31);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(135, 39);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Show Markers";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // UserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -158,6 +170,7 @@
         private GMap.NET.WindowsForms.GMapControl map;
         private System.Windows.Forms.ComboBox OptionsBox;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

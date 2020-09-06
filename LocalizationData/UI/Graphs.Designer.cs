@@ -121,10 +121,10 @@
             this.stackChart.Location = new System.Drawing.Point(12, 12);
             this.stackChart.Name = "stackChart";
             series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn100;
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
             series3.Legend = "Legend1";
             series3.Name = "Series1";
-            series3.YValuesPerPoint = 2;
+            series3.YValuesPerPoint = 4;
             this.stackChart.Series.Add(series3);
             this.stackChart.Size = new System.Drawing.Size(997, 537);
             this.stackChart.TabIndex = 1;

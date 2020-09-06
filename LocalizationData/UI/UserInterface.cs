@@ -16,6 +16,7 @@ namespace LocalizationData
         private List<PointLatLng> puntos;
         GMapOverlay markers = new GMapOverlay("markers");
         DataTable dt;
+        Boolean hasMarkers = false;
 
         public UserInterface()
         {
@@ -89,7 +90,7 @@ namespace LocalizationData
                 }
             }
             dataGridView1.DataSource = dt;
-            setMarkers();
+            
         }
 
         private void map_Load(object sender, EventArgs e)
@@ -114,6 +115,23 @@ namespace LocalizationData
         {
             Graphs gr = new Graphs(dt);
             gr.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (!hasMarkers)
+            {
+                setMarkers();
+                hasMarkers = true;
+                button2.Text = "Hide Markers";
+            }
+            else
+            {
+                markers.Clear();
+                button2.Text = "Show Markers";
+                hasMarkers = false;
+            }
+            
         }
     }
 }

@@ -40,11 +40,11 @@
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.pieChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.barChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.stackChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.lineChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pieChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barChart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stackChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lineChart)).BeginInit();
             this.SuspendLayout();
             // 
             // splitter1
@@ -61,7 +61,7 @@
             this.pieChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.pieChart.Legends.Add(legend1);
-            this.pieChart.Location = new System.Drawing.Point(1015, 12);
+            this.pieChart.Location = new System.Drawing.Point(1097, 580);
             this.pieChart.Name = "pieChart";
             this.pieChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             series1.ChartArea = "ChartArea1";
@@ -69,7 +69,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.pieChart.Series.Add(series1);
-            this.pieChart.Size = new System.Drawing.Size(709, 537);
+            this.pieChart.Size = new System.Drawing.Size(709, 424);
             this.pieChart.TabIndex = 3;
             this.pieChart.Text = "chart3";
             // 
@@ -79,7 +79,7 @@
             this.barChart.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.barChart.Legends.Add(legend2);
-            this.barChart.Location = new System.Drawing.Point(297, 555);
+            this.barChart.Location = new System.Drawing.Point(9, 580);
             this.barChart.Name = "barChart";
             this.barChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
             this.barChart.PaletteCustomColors = new System.Drawing.Color[] {
@@ -108,27 +108,31 @@
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             this.barChart.Series.Add(series2);
-            this.barChart.Size = new System.Drawing.Size(1367, 449);
+            this.barChart.Size = new System.Drawing.Size(1082, 424);
             this.barChart.TabIndex = 2;
             this.barChart.Text = "chart2";
             // 
-            // stackChart
+            // lineChart
             // 
+            chartArea3.AxisX.Interval = 1D;
+            chartArea3.AxisX.MaximumAutoSize = 10F;
+            chartArea3.AxisX2.LabelAutoFitMaxFontSize = 100;
+            chartArea3.AxisX2.LabelAutoFitMinFontSize = 100;
+            chartArea3.AxisY.Interval = 1D;
             chartArea3.Name = "ChartArea1";
-            this.stackChart.ChartAreas.Add(chartArea3);
+            this.lineChart.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
-            this.stackChart.Legends.Add(legend3);
-            this.stackChart.Location = new System.Drawing.Point(12, 12);
-            this.stackChart.Name = "stackChart";
+            this.lineChart.Legends.Add(legend3);
+            this.lineChart.Location = new System.Drawing.Point(12, 12);
+            this.lineChart.Name = "lineChart";
             series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series3.Legend = "Legend1";
             series3.Name = "Series1";
-            series3.YValuesPerPoint = 4;
-            this.stackChart.Series.Add(series3);
-            this.stackChart.Size = new System.Drawing.Size(997, 537);
-            this.stackChart.TabIndex = 1;
-            this.stackChart.Text = "chart1";
+            this.lineChart.Series.Add(series3);
+            this.lineChart.Size = new System.Drawing.Size(1794, 562);
+            this.lineChart.TabIndex = 1;
+            this.lineChart.Text = "chart1";
             // 
             // button1
             // 
@@ -144,17 +148,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1724, 1004);
+            this.ClientSize = new System.Drawing.Size(1818, 1004);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.pieChart);
             this.Controls.Add(this.barChart);
-            this.Controls.Add(this.stackChart);
+            this.Controls.Add(this.lineChart);
             this.Name = "Graphs";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pieChart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barChart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stackChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lineChart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -163,7 +167,7 @@
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.DataVisualization.Charting.Chart pieChart;
         private System.Windows.Forms.DataVisualization.Charting.Chart barChart;
-        private System.Windows.Forms.DataVisualization.Charting.Chart stackChart;
+        private System.Windows.Forms.DataVisualization.Charting.Chart lineChart;
         private System.Windows.Forms.Button button1;
     }
 }

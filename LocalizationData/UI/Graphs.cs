@@ -21,6 +21,7 @@ namespace LocalizationData.UI
             InitializeComponent();
             LoadBarChart();
             LoadPieChart();
+            LoadRadarChart();
         }
 
         private void GoFullscreen()
@@ -71,7 +72,7 @@ namespace LocalizationData.UI
             List<int> regionCount = new List<int>();
             //Console.WriteLine(dt.Rows[32][0]);
             //Console.WriteLine(dt.Rows.Count);
-            for (int i = 0; i < dt.Rows.Count - 5; i++)
+            for (int i = 0; i < dt.Rows.Count ; i++)
             {
                 if (regions.Contains(dt.Rows[i][6]))
                 {
@@ -91,6 +92,34 @@ namespace LocalizationData.UI
                 pieChart.Series[seriesname].Points[i].Label = " ";
                 pieChart.Series[seriesname].Points[i].LegendText = regions[i];
             }
+        }
+
+        public void LoadRadarChart()
+        {
+            List<string> regions = new List<string>();
+            List<int> regionCount = new List<int>();
+            //Console.WriteLine(dt.Rows[32][0]);
+            //Console.WriteLine(dt.Rows.Count);
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                if (regions.Contains(dt.Rows[i][6]))
+                {
+                    regionCount[regions.IndexOf(dt.Rows[i][6] + "")]++;
+                }
+                else
+                {
+                    regions.Add(dt.Rows[i][6] + "");
+                    regionCount.Add(1);
+                }
+
+            }
+            for(int i = 0; i < regions.Count; i++)
+            {
+                //radarChart.Series.Add(regions[i]);
+                lineChart.Series["Series1"].Points.AddXY(regions[i], regionCount[i]);
+            }
+            //lineChart.ChartAreas.
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

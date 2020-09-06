@@ -21,13 +21,18 @@ namespace LocalizationData
         {
             dt = new DataTable();
             puntos = new List<PointLatLng>();
-           
-            
 
-                InitializeComponent();
+            GoFullscreen();
+            InitializeComponent();
             loadDataGridView();
             
 
+        }
+
+        private void GoFullscreen()
+        {
+                this.WindowState = FormWindowState.Maximized;
+                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
         }
 
         private void setMarkers()

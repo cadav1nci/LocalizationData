@@ -55,8 +55,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.button1);
             this.splitContainer1.Panel2.Controls.Add(this.OptionsBox);
             this.splitContainer1.Panel2.Controls.Add(this.map);
-            this.splitContainer1.Size = new System.Drawing.Size(1087, 572);
-            this.splitContainer1.SplitterDistance = 538;
+            this.splitContainer1.Size = new System.Drawing.Size(1531, 1035);
+            this.splitContainer1.SplitterDistance = 757;
             this.splitContainer1.TabIndex = 0;
             // 
             // dataGridView1
@@ -67,14 +67,14 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(538, 572);
+            this.dataGridView1.Size = new System.Drawing.Size(757, 1035);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(0, 527);
+            this.button1.Location = new System.Drawing.Point(0, 990);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 42);
             this.button1.TabIndex = 2;
@@ -101,7 +101,7 @@
             "column10"});
             this.OptionsBox.Location = new System.Drawing.Point(0, 0);
             this.OptionsBox.Name = "OptionsBox";
-            this.OptionsBox.Size = new System.Drawing.Size(545, 24);
+            this.OptionsBox.Size = new System.Drawing.Size(770, 24);
             this.OptionsBox.TabIndex = 1;
             this.OptionsBox.SelectedIndexChanged += new System.EventHandler(this.choose);
             this.OptionsBox.Click += new System.EventHandler(this.choose);
@@ -129,7 +129,7 @@
             this.map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.map.ShowTileGridLines = false;
-            this.map.Size = new System.Drawing.Size(545, 572);
+            this.map.Size = new System.Drawing.Size(770, 1035);
             this.map.TabIndex = 0;
             this.map.Zoom = 18D;
             this.map.Load += new System.EventHandler(this.map_Load);
@@ -138,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1087, 572);
+            this.ClientSize = new System.Drawing.Size(1531, 1035);
             this.Controls.Add(this.splitContainer1);
             this.Name = "UserInterface";
             this.Text = "Form1";

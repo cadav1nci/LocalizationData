@@ -102,13 +102,17 @@ namespace LocalizationData
 
                         string s = aux[6];
                         string m = aux[0];
-                        
-                        Municipios.Add(m);
-                        Departamentos.Add(s);
+                        if (!Municipios.Contains(m)) {
+                            Municipios.Add(m);
+                        }
+
+
+
                         PointLatLng p = new PointLatLng(lat, lon);
                         puntos.Add(p);
                         dt.Rows.Add(aux);
                     }
+
 
                 }
             }
@@ -142,7 +146,7 @@ namespace LocalizationData
             else
             {
                 string c = "CALI";
-                dt.DefaultView.RowFilter = $"MUNICIPIO LIKE '{categorico.Text}%'";
+                dt.DefaultView.RowFilter = $"UBICACION LIKE '{categorico.Text}%'";
                
             }
            

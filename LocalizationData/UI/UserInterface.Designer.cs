@@ -89,7 +89,7 @@ namespace LocalizationData
             this.categorico.Name = "categorico";
             this.categorico.Size = new System.Drawing.Size(121, 24);
             this.categorico.TabIndex = 5;
-            this.OptionsBox.Click += new System.EventHandler(this.chooseCategorico);
+            this.categorico.SelectedIndexChanged += new System.EventHandler(this.chooseCategorico);
             // 
             // cadena
             // 
@@ -139,7 +139,7 @@ namespace LocalizationData
             this.OptionsBox.Size = new System.Drawing.Size(770, 24);
             this.OptionsBox.TabIndex = 1;
             this.OptionsBox.SelectedIndexChanged += new System.EventHandler(this.choose);
-            this.OptionsBox.Click += new System.EventHandler(this.choose);
+           // this.OptionsBox.Click += new System.EventHandler(this.choose);
             // 
             // map
             // 

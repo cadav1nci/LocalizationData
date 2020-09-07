@@ -138,7 +138,7 @@ namespace LocalizationData
 
         private void chooseCategorico(object sender, EventArgs e)
         {
-
+            loadDataGridView();
             if (departamentoSelected)
             {
                 Console.WriteLine(categorico.Text);
@@ -158,6 +158,7 @@ namespace LocalizationData
 
         private void choose(object sender, EventArgs e)
         {
+            loadDataGridView();
             string cases = OptionsBox.Text;
 
             switch (cases)
@@ -387,7 +388,20 @@ namespace LocalizationData
 
         private void filtrarRango(object sender, EventArgs e)
         {
-
+            double a = double.Parse(from.Text);
+            double b = double.Parse(to.Text);
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                if (dt.Rows[i][7]+"" != "")
+                {
+                    double code = double.Parse(dt.Rows[i][7] + "");
+                    if (code < a || code > b)
+                    {
+                        dt.Rows.Remove(dt.Rows[i]);
+                    }
+                }
+                
+            }
         }
     }
 }

@@ -33,6 +33,9 @@ namespace LocalizationData
             this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.filtraRangoB = new System.Windows.Forms.Button();
+            this.to = new System.Windows.Forms.TextBox();
+            this.from = new System.Windows.Forms.TextBox();
             this.categorico = new System.Windows.Forms.ComboBox();
             this.cadena = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -40,9 +43,6 @@ namespace LocalizationData
             this.OptionsBox = new System.Windows.Forms.ComboBox();
             this.map = new GMap.NET.WindowsForms.GMapControl();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.from = new System.Windows.Forms.TextBox();
-            this.to = new System.Windows.Forms.TextBox();
-            this.filtraRangoB = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -87,13 +87,37 @@ namespace LocalizationData
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // filtraRangoB
+            // 
+            this.filtraRangoB.Location = new System.Drawing.Point(372, 27);
+            this.filtraRangoB.Name = "filtraRangoB";
+            this.filtraRangoB.Size = new System.Drawing.Size(93, 30);
+            this.filtraRangoB.TabIndex = 8;
+            this.filtraRangoB.Text = "filtrar";
+            this.filtraRangoB.UseVisualStyleBackColor = true;
+            this.filtraRangoB.Click += new System.EventHandler(this.filtrarRango);
+            // 
+            // to
+            // 
+            this.to.Location = new System.Drawing.Point(267, 31);
+            this.to.Name = "to";
+            this.to.Size = new System.Drawing.Size(99, 22);
+            this.to.TabIndex = 7;
+            // 
+            // from
+            // 
+            this.from.Location = new System.Drawing.Point(159, 31);
+            this.from.Name = "from";
+            this.from.Size = new System.Drawing.Size(102, 22);
+            this.from.TabIndex = 6;
+            // 
             // categorico
             // 
             this.categorico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.categorico.FormattingEnabled = true;
-            this.categorico.Location = new System.Drawing.Point(410, 29);
+            this.categorico.Location = new System.Drawing.Point(159, 29);
             this.categorico.Name = "categorico";
-            this.categorico.Size = new System.Drawing.Size(121, 24);
+            this.categorico.Size = new System.Drawing.Size(192, 24);
             this.categorico.TabIndex = 5;
             this.categorico.SelectedIndexChanged += new System.EventHandler(this.chooseCategorico);
             // 
@@ -108,9 +132,9 @@ namespace LocalizationData
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(4, 31);
+            this.button2.Location = new System.Drawing.Point(4, 25);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 39);
+            this.button2.Size = new System.Drawing.Size(135, 30);
             this.button2.TabIndex = 3;
             this.button2.Text = "marcadores";
             this.button2.UseVisualStyleBackColor = true;
@@ -179,30 +203,6 @@ namespace LocalizationData
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // from
-            // 
-            this.from.Location = new System.Drawing.Point(159, 70);
-            this.from.Name = "from";
-            this.from.Size = new System.Drawing.Size(70, 22);
-            this.from.TabIndex = 6;
-            // 
-            // to
-            // 
-            this.to.Location = new System.Drawing.Point(267, 70);
-            this.to.Name = "to";
-            this.to.Size = new System.Drawing.Size(69, 22);
-            this.to.TabIndex = 7;
-            // 
-            // filtraRangoB
-            // 
-            this.filtraRangoB.Location = new System.Drawing.Point(410, 70);
-            this.filtraRangoB.Name = "filtraRangoB";
-            this.filtraRangoB.Size = new System.Drawing.Size(75, 23);
-            this.filtraRangoB.TabIndex = 8;
-            this.filtraRangoB.Text = "filtrar";
-            this.filtraRangoB.UseVisualStyleBackColor = true;
-            this.filtraRangoB.Click += new System.EventHandler(this.filtrarRango);
             // 
             // UserInterface
             // 

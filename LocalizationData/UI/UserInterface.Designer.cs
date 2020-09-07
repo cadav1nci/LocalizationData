@@ -1,4 +1,6 @@
-﻿namespace LocalizationData
+﻿using System;
+
+namespace LocalizationData
 {
     partial class UserInterface
     {
@@ -28,12 +30,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.categorico = new System.Windows.Forms.ComboBox();
+            this.cadena = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.OptionsBox = new System.Windows.Forms.ComboBox();
             this.map = new GMap.NET.WindowsForms.GMapControl();
-            this.button2 = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -53,6 +59,8 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.categorico);
+            this.splitContainer1.Panel2.Controls.Add(this.cadena);
             this.splitContainer1.Panel2.Controls.Add(this.button2);
             this.splitContainer1.Panel2.Controls.Add(this.button1);
             this.splitContainer1.Panel2.Controls.Add(this.OptionsBox);
@@ -73,6 +81,34 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // categorico
+            // 
+            this.categorico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.categorico.FormattingEnabled = true;
+            this.categorico.Location = new System.Drawing.Point(410, 29);
+            this.categorico.Name = "categorico";
+            this.categorico.Size = new System.Drawing.Size(121, 24);
+            this.categorico.TabIndex = 5;
+            // 
+            // cadena
+            // 
+            this.cadena.Location = new System.Drawing.Point(159, 31);
+            this.cadena.Name = "cadena";
+            this.cadena.Size = new System.Drawing.Size(192, 22);
+            this.cadena.TabIndex = 4;
+            this.cadena.Text = "Escriba su busqueda";
+            this.cadena.TextChanged += new System.EventHandler(this.cadena_TextChanged);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(4, 31);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(135, 39);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Mostrar marcadores";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -90,17 +126,13 @@
             this.OptionsBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.OptionsBox.FormattingEnabled = true;
             this.OptionsBox.Items.AddRange(new object[] {
-            "ubicacion",
-            "telefono",
-            "email",
-            "direccion",
-            "municipio",
-            "horario",
-            "departamento",
-            "codigo postal",
-            "latitud",
-            "longitud",
-            "column10"});
+            "Telefono",
+            "Email",
+            "Direccion",
+            "Municipio",
+            "Horario",
+            "Departamento",
+            "Codigo postal"});
             this.OptionsBox.Location = new System.Drawing.Point(0, 0);
             this.OptionsBox.Name = "OptionsBox";
             this.OptionsBox.Size = new System.Drawing.Size(770, 24);
@@ -136,15 +168,11 @@
             this.map.Zoom = 18D;
             this.map.Load += new System.EventHandler(this.map_Load);
             // 
-            // button2
+            // contextMenuStrip1
             // 
-            this.button2.Location = new System.Drawing.Point(4, 31);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(135, 39);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Show Markers";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // UserInterface
             // 
@@ -156,6 +184,7 @@
             this.Text = "Form1";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -163,6 +192,8 @@
 
         }
 
+
+      
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
@@ -171,6 +202,10 @@
         private System.Windows.Forms.ComboBox OptionsBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox cadena;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ComboBox categorico;
+       
     }
 }
 

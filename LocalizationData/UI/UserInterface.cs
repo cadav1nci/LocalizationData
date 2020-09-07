@@ -49,6 +49,9 @@ namespace LocalizationData
             loadDataGridView();
             categorico.Hide();
             cadena.Hide();
+            from.Hide();
+            to.Hide();
+            filtraRangoB.Hide();
 
 
         }
@@ -178,6 +181,9 @@ namespace LocalizationData
                     cadena.Show();
                     cadena.Clear();
                     categorico.Hide();
+                    from.Hide();
+                    to.Hide();
+                    filtraRangoB.Hide();
                     break;
                 case "Departamento":
                     cadena.Hide();
@@ -191,6 +197,9 @@ namespace LocalizationData
                     cadena.Hide();
                     cadena.Clear();
                     categorico.Show();
+                    from.Hide();
+                    to.Hide();
+                    filtraRangoB.Hide();
                     categorico.Items.Clear();
                     departamentoSelected = false;
                     fillCategoricoMunicipios();
@@ -201,6 +210,9 @@ namespace LocalizationData
                      codigoSelected = false;
                     telefonoSelected = false;
                     emailSelected = false;
+                    from.Hide();
+                    to.Hide();
+                    filtraRangoB.Hide();
                     cadena.Show();
                     cadena.Clear();
                     categorico.Hide();
@@ -212,7 +224,13 @@ namespace LocalizationData
                      codigoSelected = true;
                     telefonoSelected = false;
                     emailSelected = false;
-                    cadena.Show();
+                    from.Hide();
+                    to.Hide();
+                    filtraRangoB.Hide();
+                    from.Show();
+                    to.Show();
+                    filtraRangoB.Show();
+                    cadena.Hide();
                     cadena.Clear();
                     categorico.Hide();
                     categorico.Items.Clear();
@@ -224,6 +242,9 @@ namespace LocalizationData
                     codigoSelected = false;
                     telefonoSelected = true;
                     emailSelected = false;
+                    from.Hide();
+                    to.Hide();
+                    filtraRangoB.Hide();
                     cadena.Show();
                     cadena.Clear();
                     categorico.Hide();
@@ -235,12 +256,18 @@ namespace LocalizationData
                     codigoSelected = false;
                     telefonoSelected = false;
                     emailSelected = true;
+                    from.Hide();
+                    to.Hide();
+                    filtraRangoB.Hide();
                     cadena.Show();
                     cadena.Clear();
                     categorico.Hide();
                     categorico.Items.Clear();
                     break;
                 default:
+                    from.Hide();
+                    to.Hide();
+                    filtraRangoB.Hide();
                     categorico.Hide();
                     categorico.Items.Clear();
                     cadena.Hide();
@@ -356,6 +383,11 @@ namespace LocalizationData
                 hasMarkers = false;
             }
             
+        }
+
+        private void filtrarRango(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -40,6 +40,9 @@ namespace LocalizationData
             this.OptionsBox = new System.Windows.Forms.ComboBox();
             this.map = new GMap.NET.WindowsForms.GMapControl();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.from = new System.Windows.Forms.TextBox();
+            this.to = new System.Windows.Forms.TextBox();
+            this.filtraRangoB = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -59,6 +62,9 @@ namespace LocalizationData
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.filtraRangoB);
+            this.splitContainer1.Panel2.Controls.Add(this.to);
+            this.splitContainer1.Panel2.Controls.Add(this.from);
             this.splitContainer1.Panel2.Controls.Add(this.categorico);
             this.splitContainer1.Panel2.Controls.Add(this.cadena);
             this.splitContainer1.Panel2.Controls.Add(this.button2);
@@ -106,7 +112,7 @@ namespace LocalizationData
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(135, 39);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Mostrar marcadores";
+            this.button2.Text = "marcadores";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -139,7 +145,6 @@ namespace LocalizationData
             this.OptionsBox.Size = new System.Drawing.Size(770, 24);
             this.OptionsBox.TabIndex = 1;
             this.OptionsBox.SelectedIndexChanged += new System.EventHandler(this.choose);
-           // this.OptionsBox.Click += new System.EventHandler(this.choose);
             // 
             // map
             // 
@@ -175,6 +180,30 @@ namespace LocalizationData
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // from
+            // 
+            this.from.Location = new System.Drawing.Point(159, 70);
+            this.from.Name = "from";
+            this.from.Size = new System.Drawing.Size(70, 22);
+            this.from.TabIndex = 6;
+            // 
+            // to
+            // 
+            this.to.Location = new System.Drawing.Point(267, 70);
+            this.to.Name = "to";
+            this.to.Size = new System.Drawing.Size(69, 22);
+            this.to.TabIndex = 7;
+            // 
+            // filtraRangoB
+            // 
+            this.filtraRangoB.Location = new System.Drawing.Point(410, 70);
+            this.filtraRangoB.Name = "filtraRangoB";
+            this.filtraRangoB.Size = new System.Drawing.Size(75, 23);
+            this.filtraRangoB.TabIndex = 8;
+            this.filtraRangoB.Text = "filtrar";
+            this.filtraRangoB.UseVisualStyleBackColor = true;
+            this.filtraRangoB.Click += new System.EventHandler(this.filtrarRango);
+            // 
             // UserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -206,7 +235,9 @@ namespace LocalizationData
         private System.Windows.Forms.TextBox cadena;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ComboBox categorico;
-       
+        private System.Windows.Forms.Button filtraRangoB;
+        private System.Windows.Forms.TextBox to;
+        private System.Windows.Forms.TextBox from;
     }
 }
 

@@ -89,6 +89,7 @@ namespace LocalizationData
             this.categorico.Name = "categorico";
             this.categorico.Size = new System.Drawing.Size(121, 24);
             this.categorico.TabIndex = 5;
+            this.OptionsBox.Click += new System.EventHandler(this.chooseCategorico);
             // 
             // cadena
             // 
@@ -116,7 +117,7 @@ namespace LocalizationData
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 42);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Show Charts";
+            this.button1.Text = "Mostrar graficas";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 

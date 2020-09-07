@@ -134,15 +134,16 @@ namespace LocalizationData
 
             if (departamentoSelected)
             {
-                string a = (string)categorico.SelectedItem;
-                dt.DefaultView.RowFilter = $"DEPARTAMENTO LIKE '{a}%'";
-                Console.WriteLine(a + "depa");
+                Console.WriteLine(categorico.Text);
+                dt.DefaultView.RowFilter = $"DEPARTAMENTO LIKE '{categorico.Text}%'";
+                
+            
             }
             else
             {
-                string a = (string)categorico.SelectedItem;
-                dt.DefaultView.RowFilter = $"MUNICIPIO LIKE '{a}%'";
-                Console.WriteLine(a + "wekete");
+                string c = "CALI";
+                dt.DefaultView.RowFilter = $"MUNICIPIO LIKE '{categorico.Text}%'";
+               
             }
            
            
@@ -248,11 +249,48 @@ namespace LocalizationData
         private void fillCategorico() {
 
             categorico.Items.Clear();
-            foreach (string p in Departamentos) {
-                categorico.Items.Add(p);
+          
+                categorico.Items.Add("ANTIOQUIA");
+                categorico.Items.Add("ATLANTICO");
+                categorico.Items.Add("AMAZONAS");
+                categorico.Items.Add("ANCHIPIELAGO DE SAN ANDRES");
+                categorico.Items.Add("ARAUCA");
+                categorico.Items.Add("BOGOTA D.C.");
+                categorico.Items.Add("BOLIVAR");
+                categorico.Items.Add("BOYACA");
+                categorico.Items.Add("CALDAS");
+                categorico.Items.Add("CAQUETA");
+                categorico.Items.Add("CASANARE");
+                categorico.Items.Add("CAUCA");
+                categorico.Items.Add("CESAR");
+                categorico.Items.Add("CHOCO");
+                categorico.Items.Add("CORDOBA");
+                categorico.Items.Add("CUNDINAMARCA");
+                categorico.Items.Add("GUAINIA");
+                categorico.Items.Add("GUAJIRA");
+                categorico.Items.Add("HUILA");
+                categorico.Items.Add("MAGDALENA");
+                categorico.Items.Add("META");
+                categorico.Items.Add("NARIÑO");
+                categorico.Items.Add("NORTE DE SANTANDER");
+                categorico.Items.Add("PUTUMAYO");
+                categorico.Items.Add("QUINDIO");
+                categorico.Items.Add("RIOHACHA");
+                categorico.Items.Add("RISARALDA");
+                categorico.Items.Add("SANTANDER");
+                categorico.Items.Add("SUCRE");
+                categorico.Items.Add("TOLIMA");
+                categorico.Items.Add("VALLE DEL CAUCA");
+                categorico.Items.Add("VOCHADA");
+
+
+
+
+
+
             }
 
-        }
+        
 
         private void fillCategoricoMunicipios()
         {
